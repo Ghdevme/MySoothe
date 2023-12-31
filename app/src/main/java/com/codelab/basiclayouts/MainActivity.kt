@@ -247,11 +247,11 @@ private fun SootheBottomNavigation(modifier: Modifier = Modifier) {
                     contentDescription = null
                 )
             },
+            selected = true,
+            onClick = {},
             label = {
                 Text(stringResource(R.string.bottom_navigation_home))
-            },
-            selected = true,
-            onClick = {}
+            }
         )
         NavigationBarItem(
             icon = {
@@ -260,11 +260,11 @@ private fun SootheBottomNavigation(modifier: Modifier = Modifier) {
                     contentDescription = null
                 )
             },
+            selected = false,
+            onClick = {},
             label = {
                 Text(stringResource(R.string.bottom_navigation_profile))
-            },
-            selected = false,
-            onClick = {}
+            }
         )
     }
 }
